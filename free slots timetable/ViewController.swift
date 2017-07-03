@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource{
     
     let weekDaysArray = ["M","T","W","T","F"]
     let sectionItems = ["8-9 AM","9-10 AM","10-11 AM","11-12 AM","12-1 PM","1-2 PM","2-3 PM","3-4 PM","4-5 PM","5-6 PM","6-7 PM","7-8 PM","8-9 PM"]
@@ -25,6 +25,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         self.collectionView!.delegate = self
         self.collectionView!.dataSource = self
+        
+        //table view delegates setting
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         collectionView.backgroundColor = UIColor.white
         
@@ -67,8 +71,34 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     
     
-    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        print(sectionItems.count)
+        return sectionItems.count
+        
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionItems[section]
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
+        
+        tableViewCell.textLabel?.text = "No slots free"
+        
+        return tableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    
+    
+    
+    
+
+} //class
 
     
 
