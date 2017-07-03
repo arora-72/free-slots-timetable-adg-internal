@@ -12,6 +12,7 @@
 		4B2FEFAA1F0A742300EE6643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2FEFA81F0A742300EE6643 /* Main.storyboard */; };
 		4B2FEFAC1F0A742300EE6643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2FEFAB1F0A742300EE6643 /* Assets.xcassets */; };
 		4B2FEFAF1F0A742300EE6643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2FEFAD1F0A742300EE6643 /* LaunchScreen.storyboard */; };
+		4B2FEFB71F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4B2FEFAB1F0A742300EE6643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B2FEFAE1F0A742300EE6643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B2FEFB01F0A742300EE6643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDaysCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				4B2FEFA41F0A742300EE6643 /* AppDelegate.swift */,
 				4B2FEFA61F0A742300EE6643 /* ViewController.swift */,
 				4B2FEFA81F0A742300EE6643 /* Main.storyboard */,
+				4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */,
 				4B2FEFAB1F0A742300EE6643 /* Assets.xcassets */,
 				4B2FEFAD1F0A742300EE6643 /* LaunchScreen.storyboard */,
 				4B2FEFB01F0A742300EE6643 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2FEFB71F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift in Sources */,
 				4B2FEFA71F0A742300EE6643 /* ViewController.swift in Sources */,
 				4B2FEFA51F0A742300EE6643 /* AppDelegate.swift in Sources */,
 			);
