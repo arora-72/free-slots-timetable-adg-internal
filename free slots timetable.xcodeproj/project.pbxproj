@@ -13,6 +13,8 @@
 		4B2FEFAC1F0A742300EE6643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2FEFAB1F0A742300EE6643 /* Assets.xcassets */; };
 		4B2FEFAF1F0A742300EE6643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B2FEFAD1F0A742300EE6643 /* LaunchScreen.storyboard */; };
 		4B2FEFB71F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */; };
+		4BE0CA3B1F1134F200C43373 /* secondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE0CA3A1F1134F200C43373 /* secondCollectionViewCell.swift */; };
+		4BE0CA3D1F11352400C43373 /* tableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE0CA3C1F11352400C43373 /* tableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4B2FEFAE1F0A742300EE6643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B2FEFB01F0A742300EE6643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDaysCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BE0CA3A1F1134F200C43373 /* secondCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BE0CA3C1F11352400C43373 /* tableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		4B2FEFA31F0A742300EE6643 /* free slots timetable */ = {
 			isa = PBXGroup;
 			children = (
+				4B806CC41F11555D007A22F8 /* Controller */,
+				4B806CC31F115558007A22F8 /* Model */,
+				4B806CC21F115552007A22F8 /* View */,
 				4B2FEFA41F0A742300EE6643 /* AppDelegate.swift */,
-				4B2FEFA61F0A742300EE6643 /* ViewController.swift */,
 				4B2FEFA81F0A742300EE6643 /* Main.storyboard */,
-				4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */,
 				4B2FEFAB1F0A742300EE6643 /* Assets.xcassets */,
 				4B2FEFAD1F0A742300EE6643 /* LaunchScreen.storyboard */,
 				4B2FEFB01F0A742300EE6643 /* Info.plist */,
 			);
 			path = "free slots timetable";
+			sourceTree = "<group>";
+		};
+		4B806CC21F115552007A22F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B2FEFB61F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift */,
+				4BE0CA3A1F1134F200C43373 /* secondCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B806CC31F115558007A22F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BE0CA3C1F11352400C43373 /* tableViewModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4B806CC41F11555D007A22F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B2FEFA61F0A742300EE6643 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE0CA3B1F1134F200C43373 /* secondCollectionViewCell.swift in Sources */,
+				4BE0CA3D1F11352400C43373 /* tableViewModel.swift in Sources */,
 				4B2FEFB71F0A772A00EE6643 /* WeekDaysCollectionViewCell.swift in Sources */,
 				4B2FEFA71F0A742300EE6643 /* ViewController.swift in Sources */,
 				4B2FEFA51F0A742300EE6643 /* AppDelegate.swift in Sources */,
@@ -308,6 +340,7 @@
 				4B2FEFB51F0A742300EE6643 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
